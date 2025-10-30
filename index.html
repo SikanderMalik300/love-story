@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story - Sinatra & Angel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Music Player -->
+    <div class="music-control" id="musicControl">
+        <button id="musicToggle" class="music-btn">🎵</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="stars"></div>
+        <div class="hero-content">
+            <div class="hero-title-container">
+                <h1 class="hero-title fade-in">Sinatra & Angel</h1>
+                <p class="hero-subtitle fade-in-delay">A Love Story Written in the Stars</p>
+                <div class="hero-date fade-in-delay-2">Since January 3rd, 2025</div>
+            </div>
+            <div class="button-focus-container">
+                <div class="arrow arrow-left">←</div>
+                <button class="start-btn" id="startBtn">Begin Our Journey</button>
+                <div class="arrow arrow-right">→</div>
+            </div>
+            <div class="arrow-below">
+                <span>Click here to start</span>
+                <div class="arrow-down-btn">↓</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">S & A</div>
+            <div class="nav-progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Chapter 1: How We Met -->
+    <section class="chapter chapter-1" id="chapter1">
+        <div class="container">
+            <div class="chapter-header">
+                <span class="chapter-number">Chapter 1</span>
+                <h2 class="chapter-title">How We Met</h2>
+            </div>
+            <div class="content-grid">
+                <div class="text-content">
+                    <p class="story-text">
+                        We met one day by pure chance in Minecraft. Nothing extraordinary happened that day, 
+                        but something about it changed my life forever. It truly began when I asked about you 
+                        while you were taking your exams when no one else did. From that small moment, our 
+                        connection started to grow.
+                    </p>
+                    <p class="story-text">
+                        We began spending our days and nights together, talking endlessly, and it always felt 
+                        so effortless, so natural. We shared everything – our traumas, our happiness, our 
+                        struggles. We supported each other through every storm and celebrated every small joy.
+                    </p>
+                    <div class="highlight-box">
+                        <p class="highlight-text">
+                            "I still remember the very first message I sent you – it was on 3/1, my birthday. 
+                            You became someone incredibly dear to me, more than anyone else ever has."
+                        </p>
+                    </div>
+                </div>
+                <div class="image-content">
+                    <div class="image-card">
+                        <img src="images/minecraft-meet.jpg" alt="Where it all began" class="story-image">
+                        <p class="image-caption">Where our story began</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chapter 2: Divine Connection -->
+    <section class="chapter chapter-2" id="chapter2">
+        <div class="container">
+            <div class="chapter-header">
+                <span class="chapter-number">Chapter 2</span>
+                <h2 class="chapter-title">A Divine Connection</h2>
+            </div>
+            <div class="content-grid reverse">
+                <div class="image-content">
+                    <div class="image-card">
+                        <img src="images/angel-theme.jpg" alt="Angel" class="story-image">
+                        <p class="image-caption">My Angel 👼</p>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <p class="story-text">
+                        I'll never forget that you once prayed for God to protect you from bad people, and 
+                        somehow, out of nowhere, I appeared in your life. I'll always be grateful for that.
+                    </p>
+                    <p class="story-text">
+                        You're an angel – in name and in soul. I'm ready to do whatever it takes to build a 
+                        future with you, to make your dreams come true. Seeing your smile means more to me than 
+                        anything else in this world.
+                    </p>
+                    <div class="quote-card">
+                        <p>"You've been through so much, yet you keep holding on, and I'm endlessly proud of you for that."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chapter 3: The Confession -->
+    <section class="chapter chapter-3" id="chapter3">
+        <div class="container">
+            <div class="chapter-header">
+                <span class="chapter-number">Chapter 3</span>
+                <h2 class="chapter-title">The Night Everything Changed</h2>
+            </div>
+            <div class="confession-container">
+                <div class="confession-card">
+                    <div class="confession-icon">💫</div>
+                    <p class="story-text centered">
+                        It was a calm night, just before we went to sleep, when I finally confessed my feelings 
+                        to you. That quiet moment changed everything – changed in my life for the better. It became 
+                        the day we got together, and one of my favorite memories.
+                    </p>
+                    <p class="story-text centered highlight">
+                        I knew right then you were someone truly special to me.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chapter 4: Messages From The Heart -->
+    <section class="chapter chapter-4" id="chapter4">
+        <div class="container">
+            <div class="chapter-header">
+                <span class="chapter-number">Chapter 4</span>
+                <h2 class="chapter-title">Messages That Warm My Heart</h2>
+            </div>
+            <div class="messages-container">
+                <div class="message-card message-left">
+                    <div class="message-header">
+                        <span class="message-sender">sinatra</span>
+                        <span class="message-date">08/06/2025, 03:58</span>
+                    </div>
+                    <p class="message-text">
+                        Sleep well my princess my queen my everything my sunshine my light my angel my happiness. 
+                        My heart will always belong to you. I love u and I'll keeping loving and I'll make sure 
+                        to love u ever more and more until i die. You're so pure and adorable I'm proud of you and sweet 
+                        dreams i love u I love u, you make my heart explode and excited and happy I love u once 
+                        again I LOVE YOU sleep well and i'll hug a pillow and imagine it's u while I know ur 
+                        sleeping beside me even if it's a call I still feel ur presence and it makes me melt I'm so deep 
+                        in love with u ❤️ sweet dreams
+                    </p>
+                </div>
+
+                <div class="message-card message-right">
+                    <div class="message-header">
+                        <span class="message-sender">Angel ♡</span>
+                        <span class="message-date">04/06/2025, 05:13</span>
+                    </div>
+                    <p class="message-text">
+                        Thank you for ur constant support Ayman through all of that. Ayman I wouldn't have 
+                        done this much without u cheering on me. You're truly a gem pushing me forward and I can't 
+                        be more grateful to have u. I'm so delighted to be able to share this happiness with you. I 
+                        love you more than u will ever expect
+                    </p>
+                </div>
+
+                <div class="message-card message-left">
+                    <div class="message-header">
+                        <span class="message-sender">sinatra</span>
+                        <span class="message-date">11/05/2025, 08:10</span>
+                    </div>
+                    <p class="message-text">
+                        2nd of all I adore soooo much i'm glad I met u. Whenever I think about u it makes me say to 
+                        myself "i gotta make my princess happy and im so lucky to have her in my life" because 
+                        your happiness means the world to me and I'm always here for u and you're not just 
+                        someone i adore ur princess that I'd move mountains for and you're the only one i want 
+                        to have in my life because sometimes i keep asking myself that choosing a partner is 
+                        something serious bc I'll be living with her for the rest of my life and were both responsible 
+                        for our happiness and for the first time i feel like that im ready for that and my heart chose 
+                        you without hesitation
+                    </p>
+                </div>
+
+                <div class="message-card message-left">
+                    <div class="message-header">
+                        <span class="message-sender">sinatra</span>
+                        <span class="message-date">20/03/2025, 16:47</span>
+                    </div>
+                    <p class="message-text">
+                        what's the purpose of my ears if I don't listen to u
+                    </p>
+                </div>
+
+                <div class="message-card message-left">
+                    <div class="message-header">
+                        <span class="message-sender">sinatra</span>
+                        <span class="message-date">05/05/2025, 03:52</span>
+                    </div>
+                    <p class="message-text">
+                        ANGEL YOUR THE CUTEST AND MOST ADORABLE HUMAN BEING IVE EVER MET AND BEAUTIFUL AND WITH A GREAT TASTE 
+                        AND PERSONALITY SO KIND THAT U BECAME THE MEANING OF YOUR ANGELIC NAME I WANT YOU TO BE HAPPY AND 
+                        ALWAYS SMILING I ADORE U
+                    </p>
+                </div>
+
+                <div class="message-card message-left">
+                    <div class="message-header">
+                        <span class="message-sender">sinatra</span>
+                        <span class="message-date">21/03/2025, 08:28</span>
+                    </div>
+                    <p class="message-text">
+                        Good morning angel as the sun rises, my heart fills with joy knowing I get to spend 
+                        another day with you every moment with you is a treasure, and I can't wait to create more 
+                        beautiful memories together
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chapter 5: Things She Loves -->
+    <section class="chapter chapter-5" id="chapter5">
+        <div class="container">
+            <div class="chapter-header">
+                <span class="chapter-number">Chapter 5</span>
+                <h2 class="chapter-title">Things That Make Angel Happy</h2>
+            </div>
+            <div class="loves-grid">
+                <div class="love-card">
+                    <div class="love-icon">🎮</div>
+                    <h3>Valorant & 100 Thieves</h3>
+                    <p>Supporting you through every match, celebrating every win</p>
+                    <div class="love-image">
+                        <img src="images/valorant.png" alt="Valorant 100T">
+                    </div>
+                </div>
+                <div class="love-card">
+                    <div class="love-icon">🎵</div>
+                    <h3>Music That Moves Us</h3>
+                    <p>Die With A Smile, Abracadabra, Ya Zahrat al-Mada'in</p>
+                </div>
+                <div class="love-card">
+                    <div class="love-icon">🍕</div>
+                    <h3>Favorite Foods</h3>
+                    <p>The simple joys that make you smile</p>
+                    <div class="love-image">
+                        <img src="images/pizza.png" alt="Pizza">
+                    </div>
+                </div>
+                <div class="love-card">
+                    <div class="love-icon">🐶</div>
+                    <h3>Snoopy</h3>
+                    <p>Our adorable companion in spirit</p>
+                    <div class="love-image">
+                        <img src="images/snoopy.png" alt="Snoopy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chapter 6: Special Moments -->
+    <section class="chapter chapter-6" id="chapter6">
+        <div class="container">
+            <div class="chapter-header">
+                <span class="chapter-number">Chapter 6</span>
+                <h2 class="chapter-title">Moments I'll Never Forget</h2>
+            </div>
+            <div class="moments-container">
+                <div class="moment-card">
+                    <div class="moment-content">
+                        <h3>Playing For You</h3>
+                        <p class="story-text">
+                            I've been playing Valorant when you weren't free, but you told me to win for you. 
+                            I took that screenshot as MVP and drew your favorite character Snoopy with your name 
+                            while in game. They tried to rush me, but I didn't care – I was focused on winning for you.
+                        </p>
+                        <div class="moment-images">
+                            <img src="images/valorant-game.png" alt="Valorant MVP" class="moment-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moment-card">
+                    <div class="moment-content">
+                        <h3>A Dream Come True</h3>
+                        <p class="story-text">
+                            "Your hand on my face, your soft kiss – it felt like a dream, and I rarely dream. 
+                            That's how dear you are to me, how much you mean to my heart."
+                        </p>
+                        <div class="highlight-box">
+                            <p class="highlight-text">
+                                "Your hand on my face, your soft kiss – it felt like a dream. That's how dear you are to me, 
+                                how much you mean to my heart."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moment-card">
+                    <div class="moment-content">
+                        <h3>Always Believing In You</h3>
+                        <div class="message-card message-left">
+                            <div class="message-header">
+                                <span class="message-sender">sinatra</span>
+                                <span class="message-date">04/06/2025, 03:47</span>
+                            </div>
+                            <p class="message-text">
+                                ANGEL i believe in u and i never doubted u.i know u gonna get stressed but i remember 
+                                that you're smart and confident and more ready than u think, you went through a lot of 
+                                struggles and tears were dropping from ur cute eyes and even in those moments ,so i'm 
+                                proud of you not just for what ur about to accomplish but for everything ur've already 
+                                overcome and im sure you gonna nail just believe in yourself and stretch your wings 
+                                Angel like you always do, im cheering for u on every letter you spell and step u take you got 
+                                this and lastly make sure to get enough rest after all the hard work you did and eat well 
+                                ,stay hydrated and lastly I LOVE YOU ❤️
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chapter 7: Our Journey Together -->
+    <section class="chapter chapter-7" id="chapter7">
+        <div class="container">
+            <div class="chapter-header">
+                <span class="chapter-number">Chapter 7</span>
+                <h2 class="chapter-title">What We've Shared</h2>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-icon">🎮</div>
+                    <h3>Gaming Together</h3>
+                    <p>Minecraft, Valorant, and countless adventures</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">📺</div>
+                    <h3>Series Marathons</h3>
+                    <p>Watching our favorite shows together</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">💬</div>
+                    <h3>Deep Conversations</h3>
+                    <p>Talking about everything, from silly to serious</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">😊</div>
+                    <h3>Gossip Sessions</h3>
+                    <p>Sharing laughs and secrets</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">🤗</div>
+                    <h3>Supporting Each Other</h3>
+                    <p>Through every tear and every triumph</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">💭</div>
+                    <h3>Being Ourselves</h3>
+                    <p>The only person who makes me feel truly like myself</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Message Section -->
+    <section class="chapter final-chapter" id="finalChapter">
+        <div class="container">
+            <div class="final-content">
+                <div class="final-icon">💝</div>
+                <h2 class="final-title">My Promise to You</h2>
+                <div class="final-message">
+                    <p class="story-text centered large">
+                        Of course, we've had our bad moments too, but you're worth every fight, every tear, 
+                        every effort. I'll keep choosing you, again and again, no matter what.
+                    </p>
+                    <p class="story-text centered large">
+                        We've played games, watched series, gossiped, cried, and shared deep talks – and 
+                        through it all, you're the only person who truly makes me feel like myself.
+                    </p>
+                    <div class="final-declaration">
+                        <h3>I love you</h3>
+                        <p>Deeply, endlessly, and always.</p>
+                    </div>
+                    <div class="message-card message-left special-message">
+                        <div class="message-header">
+                            <span class="message-sender">sinatra</span>
+                            <span class="message-date">06/09/2025, 04:15</span>
+                        </div>
+                        <p class="message-text">
+                            Also i know i should be sleeping rn but i wanna say im grateful that i have u in my life 
+                            and you're the part of me I never knew was missing until you came into my life. I'm so 
+                            grateful to call you my princess I love u
+                        </p>
+                    </div>
+                </div>
+                <button class="replay-btn" id="replayBtn">Experience Our Story Again</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Audio Element -->
+    <audio id="bgMusic" loop autoplay>
+        <source src="music/die-with-a-smile.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
