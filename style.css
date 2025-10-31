@@ -648,20 +648,40 @@ body {
 
 /* Messages Container */
 .messages-container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
 }
 
 .message-card {
     background: var(--base-200);
     border-radius: var(--radius-lg);
-    padding: var(--spacing-md);
-    margin-bottom: var(--spacing-md);
-    box-shadow: var(--shadow-sm);
-    transition: all 0.3s ease;
+    padding: var(--spacing-md) var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+    transition: all 0.4s ease;
     opacity: 0;
     transform: translateY(30px);
+    position: relative;
+    overflow: hidden;
+}
+
+.message-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.message-card:hover::before {
+    transform: scaleX(1);
 }
 
 .message-card.visible {
@@ -670,45 +690,96 @@ body {
 }
 
 .message-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
 }
 
+/* Different styling for sender */
 .message-card.message-left {
-    background: linear-gradient(135deg, var(--base-200) 0%, var(--base-300) 100%);
-    border-left: 4px solid var(--primary);
+    background: linear-gradient(135deg, rgba(255, 107, 157, 0.15) 0%, rgba(192, 132, 252, 0.1) 100%);
+    border: 1px solid rgba(255, 107, 157, 0.2);
 }
 
 .message-card.message-right {
-    background: linear-gradient(135deg, var(--base-300) 0%, var(--neutral) 100%);
-    border-right: 4px solid var(--secondary);
+    background: linear-gradient(135deg, rgba(192, 132, 252, 0.15) 0%, rgba(251, 191, 36, 0.1) 100%);
+    border: 1px solid rgba(192, 132, 252, 0.2);
 }
 
 .message-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: var(--spacing-sm);
-    padding-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .message-sender {
-    font-weight: 600;
-    color: var(--primary);
-    font-size: 0.95rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.message-sender::before {
+    content: '💬';
+    font-size: 1.2rem;
+    -webkit-text-fill-color: initial;
+}
+
+.message-card.message-right .message-sender {
+    background: linear-gradient(135deg, #c084fc 0%, #fbbf24 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.message-card.message-right .message-sender::before {
+    content: '✨';
 }
 
 .message-date {
     font-size: 0.85rem;
     color: var(--neutral-content);
-    opacity: 0.7;
+    opacity: 0.6;
+    font-weight: 500;
+    background: var(--base-300);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-full);
 }
 
 .message-text {
-    font-size: 1rem;
-    line-height: 1.7;
+    font-size: 1.05rem;
+    line-height: 1.8;
     color: var(--neutral-content);
+    opacity: 0.95;
+    letter-spacing: 0.3px;
+}
+
+/* Special message styling */
+.special-message {
+    background: linear-gradient(135deg, rgba(255, 107, 157, 0.25) 0%, rgba(192, 132, 252, 0.2) 100%);
+    border: 2px solid var(--primary);
+    box-shadow: 0 8px 32px rgba(255, 107, 157, 0.3);
+}
+
+.special-message::before {
+    height: 4px;
+    background: var(--gradient-secondary);
+}
+
+.special-message .message-sender {
+    font-size: 1.2rem;
+}
+
+.special-message .message-text {
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 /* Loves Grid */
@@ -1033,7 +1104,15 @@ body {
     }
     
     .message-card {
-        padding: var(--spacing-sm);
+        padding: var(--spacing-md);
+    }
+    
+    .message-sender {
+        font-size: 1rem;
+    }
+    
+    .message-text {
+        font-size: 1rem;
     }
     
     .music-btn {
@@ -1057,6 +1136,10 @@ body {
     
     .arrow-down-btn {
         font-size: 1.5rem;
+    }
+    
+    .messages-container {
+        padding: var(--spacing-sm);
     }
 }
 
